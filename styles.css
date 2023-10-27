@@ -47,14 +47,14 @@
   #nav-bar {
     height: 100%; 
   }
-  #nav-bar, ul {
+  #nav-bar, #nav-bar>ul {
     display: flex;
     font-size: 4rem;
     justify-content: center;
     align-items: center;
   }
 
-  ul {
+  #nav-bar>ul {
     list-style-type: none;
     height: 100%;
     text-align: center;
@@ -69,13 +69,13 @@
     text-align: center;
   }
 
-  li:hover, .nav-link:hover {
+  #nav-bar>ul>li:hover, .nav-link:hover {
     background-color: rgb(255, 149, 149);
     color: rgb(253, 236, 180);
     
   }
 
-  li {
+  #nav-bar>ul>li {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -93,8 +93,16 @@
     display: flex;
     flex-direction: column;
     place-items: center;
+    /* justify-content:space-between; */
     width:  100%;
     font-size: 7rem;
+  }
+
+  .intro-quote {
+    text-decoration: none;
+    margin-top: 5rem;
+    font-style: italic;
+    /* background-color: gold; */
   }
   
 
@@ -104,7 +112,7 @@
     flex-direction: column;
     padding: 4rem;
     margin: 4rem;
-    /* background-color: rgb(255, 224, 120); */
+    background-color: rgb(255, 224, 120);
     border-radius: 10%;
     align-items: center;
     justify-content: center;
@@ -146,9 +154,74 @@
     font-size: 4rem;
   }
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* background-color: rgb(255, 255, 255); */
+  }
+  #about>ul{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: left;
+    margin: auto;
+    /* background-color: grey; */
+  }
+
+  .about-info {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: green; */
+  }
+  #about>h2 {
+    text-decoration: none;
+    align-items: center;
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  .about-h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    /* background-color: gold; */
+    width: 30%;
+    text-align: right;
+  }
+  .about-p {
+    font-size: 3rem;
+    margin: 1.5rem 1rem 1rem 1rem;
+    width: auto;
+    /* background-color: gold; */
+  }
 
 
+  #video {
+    height: 315px;
+    width: 500px;
+    margin: 50px;
+  }
 
+  .merch-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem auto 40rem auto;
+  
+  }
+
+  .img-merch {
+    height: auto;
+    width: 300px;
+  }
 
 /* footer stuff */
 
@@ -164,6 +237,7 @@
     align-items: center;
     border-radius: 10% 10% 0 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
   }
 
   .footer-info {
@@ -179,5 +253,10 @@
 
   h2 {
     text-decoration: underline;
+  }
+
+  .break {
+    border: 2px solid gold;
+    width: 100%;
   }
 
