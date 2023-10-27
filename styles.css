@@ -220,7 +220,11 @@
 
   .img-merch {
     height: auto;
-    width: 300px;
+    width: 900px;
+    height: 900px;
+  }
+  .img-merch>img {
+    background-position: bottom;
   }
 
 /* footer stuff */
